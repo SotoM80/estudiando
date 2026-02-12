@@ -10,7 +10,7 @@ myName = 'tom'
 console.log(y);
 console.log(myName);
 
-let test2 = 'hello';
+let test2 = 'hellos';
 if (true){
    console.log(test2); 
 }
@@ -69,6 +69,12 @@ console.log();
 let fullName = `${firstName} ${lastName}`;/* using templates literals (better way) */
 console.log(fullName);
 
+let nombreAmigo ='carlos';
+let apellidoAmigo = 'johannes';
+
+let nombreacaompleto = `${nombreAmigo} ${apellidoAmigo}`;
+console.log(nombreacaompleto);
+
 /* Special String Features */
 
 let quote = 'She said, "JavaScript is awesome!"';
@@ -106,3 +112,150 @@ if (hasMoney && isStoreOpen) {
 
 let hasNoMoney = !hasMoney;
 console.log(hasNoMoney);
+
+
+/* 4- CONDITIONS & LOOPS */
+
+/*let result = 1+2;
+document.getElementById(output).innerHTML = result;*/
+let text = "no garlic in carbonara!";
+console.log(text);
+
+/* Conditions */
+
+if (10 > 3) {
+    console.log('yes this is true');
+}
+
+if (3 > 10) {
+    console.log('yes this is true');
+} else {
+    console.log('this is not true');
+}
+
+if (3 > 10){
+console.log('yes this is true');
+} else if (10 > 3){
+console.log('second is true');
+}
+
+/* Logical Operators */
+
+/* && (and) */
+if (true && true){
+console.log(true);
+}
+
+/* || (or) */
+if (true || false){
+console.log(true);
+}
+
+/* ! (Not) */
+if(!false){
+    console.log(true);
+}
+
+if (60 > 50 && 60 < 100){
+    console.log('mayor que 50, pero menor que 100');
+}
+
+if (40 < 50 || 40 > 100){
+    console.log('menor que 50, pero no mayor que 100');
+}
+
+if (60 != 60){
+    console.log('nos son iguales');
+} else {
+    console.log('se parecen');
+}
+
+
+/* Loops for and while */
+
+
+let i = 0;
+while ( i < 10){
+    console.log(i);// es bueno cuando no sabes el numero de iteracion(repeticion)
+    i++;
+}
+
+
+for (let i = 0; i < 5; i++) {
+  console.log("Vuelta número: " + i);// es bueno cuando ya sabes el numero de iteracion 
+}
+
+for (let a = 0; a < 15; a++) {
+    console.log(a);
+}
+
+for (let b = 0; b < 15; b += 2) {
+    console.log(b);
+}// incrementa en numeros pares
+
+for (let b = 10; b > 0; b-- ) {
+    console.log(b);//logs en reversa de 10 a 1
+}
+
+for (let i = 0; i < 20; i++) {
+  // Si el índice es par, muestra 'A', si es impar, muestra 'B'
+  if (i % 2 === 0) {
+    console.log("A");
+  } else {
+    console.log("B");
+  }
+}
+
+for (let l = 0; l < 10; l++) {
+  // Si el índice es par, muestra 'A', si es impar, muestra 'B'
+  if (l <= 4) {
+    console.log("A");
+  } else {
+    console.log("B");
+  }
+}
+
+for (let n = 0; n < 10; n++){
+    console.log(n);
+}
+
+let list = "<ul>";
+for (let f = 0; f < 10; f++) {
+    list += "<li>" + f + "</li>";
+}
+list += "</ul>";
+document.getElementById("output").innerHTML = list;
+
+let answer = ""
+while (answer =="") {
+    answer = prompt("what's your name", " ");
+}
+console.log(answer);
+
+
+//  (5) String Methods
+
+//substring
+const str = 'One two three four';
+console.log(str.substring(4, 7));
+console.log(str.substring(14, 18));
+
+const nam = 'perro loco ñoco';
+console.log(nam.substring(6, 10));
+console.log(nam.substring(11, 15));
+
+//includes
+//returns if a substring is present in a larger one.
+
+const browserType = "mozilla";
+if (browserType.includes("zilla")){
+    console.log("found zilla");
+} else {
+    console.log("No zilla here");
+}
+
+//indexOf
+//finds the position of a substring
+
+const tagline = "Redi school of digital integration";
+console.log(tagline.indexOf("digital"));//resultado 15
