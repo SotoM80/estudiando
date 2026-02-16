@@ -246,7 +246,6 @@ console.log(nam.substring(11, 15));
 
 //includes
 //returns if a substring is present in a larger one.
-
 const browserType = "mozilla";
 if (browserType.includes("zilla")){
     console.log("found zilla");
@@ -256,6 +255,66 @@ if (browserType.includes("zilla")){
 
 //indexOf
 //finds the position of a substring
-
 const tagline = "Redi school of digital integration";
 console.log(tagline.indexOf("digital"));//resultado 15
+
+//length
+//Returns the length of the string
+const browserType2 = "mozilla";
+console.log (browserType2.length);
+
+//concat
+//concatenates the string arguments to the string and returns a new string.
+const str1 = "Hello";
+const str2 = "world";
+console.log(str1.concat(' ',str2)); 
+console.log(str2.concat(' ', str1));
+
+//replaceAll
+//remplaza un strin con otro
+const paragraph = "soy yo el chino";
+console.log(paragraph.replaceAll("chino", "carlos"));
+
+//(+)operator
+
+//charAt(), Math.floor(Math.random())
+
+// String.split
+let palabras = "todo es muy bonito";
+let cosas = palabras.split(" ");
+console.log(cosas);
+
+// (6) Arrays
+//an array is a list, it can hold many things
+
+//ej:
+let fruits = ["apple","banana","mango"];
+console.log(fruits[0]);//apple
+console.log(fruits[2]);//mango
+console.log(fruits[1]);//banana
+
+//BASIC METHODS
+
+//adding: beginnin and end
+let arr3 = ["b","c"];
+arr3.unshift("a");//unshift (al comienzo)
+arr3.push("d");//push (al final)
+console.log(arr3);
+
+//removing: beginning and end
+let removeElement = arr3.pop();//final
+arr3.shift();//comienzo
+console.log(arr3);
+
+//get index of valeu
+console.log("index of char 'c' is: ", arr3.indexOf("c"));// respyesta es 1
+
+//ejercicios
+
+let saludando =["world","hello","abc"];
+console.log(saludando);
+
+let removesaludos = saludando.shift();
+saludando.pop();
+saludando.push("world,  ");
+console.log(saludando);
